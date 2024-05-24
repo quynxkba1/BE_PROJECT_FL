@@ -7,6 +7,7 @@ import { AppService } from './app.service';
 import { UserModule } from './modules/user/user.module';
 import { CardModule } from './modules/card/card.module';
 import { AuthModule } from './modules/auth/auth.module';
+
 import { database_config } from './configs /configuration.config';
 
 @Module({
@@ -27,7 +28,7 @@ import { database_config } from './configs /configuration.config';
     }),
     UserModule,
     CardModule,
-    AuthModule,
+    AuthModule
   ],
   controllers: [AppController],
   providers: [AppService],
